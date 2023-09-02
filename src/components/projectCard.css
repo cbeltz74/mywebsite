@@ -1,0 +1,29 @@
+.project {
+    background-color:lightblue;
+    border-radius:50px;
+}
+
+.project h2 {
+    padding-top:.5rem;
+}
+
+.project-card {
+    display:grid;
+    grid-template-columns: 40% 40% 20%;
+    padding:1rem;
+    justify-content:space-between;
+    margin:2rem 0;
+}
+
+.project-card img {
+    width:75%;
+}
+
+.projTech {
+    list-style-position: inside;
+}
+
+.projTech ul {
+    text-align:left;
+    padding-left: 5rem;    
+}

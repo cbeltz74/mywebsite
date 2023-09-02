@@ -1,5 +1,10 @@
+import { ProjectCard } from "../components";
+
 export const Projects = () => {
   return (
-    <div>Projects</div>
+    <main>
+      <h1>Projects</h1>
+      <ProjectCard />
+    </main>
   )
 }
