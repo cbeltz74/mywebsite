@@ -1,7 +1,32 @@
-.navigation {
-    display: flex;
+header {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    text-transform: uppercase;
 }
 
-.links {
-    
+.title-link {
+    text-decoration: none;
 }
+
+.title {
+    font-size: 2.5rem;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    padding: 1rem 2rem;
+    border: 1px solid blue;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: blue;
+    color:white;
+}
+

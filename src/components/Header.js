@@ -4,21 +4,21 @@ import "./header.css";
 export const Header = () => {
   return (
     <header>
-        <h1>Colin Beltz</h1>
-        <section className="navigation">
-            <NavLink to="/" className="link">
-                Home
-            </NavLink>
-            <NavLink to="/projects" className="link">
-                Projects
-            </NavLink>
-            <NavLink to="/career" className="link">
-                Career
-            </NavLink>
-            <NavLink to="/about" className="link">
-                About Me
-            </NavLink>
-        </section>
+            <Link to="/" className="title-link">
+                <img src="" alt="" />
+                <span className="title">Colin Beltz</span>
+            </Link>
+            <nav className="navigation">
+                <NavLink to="/projects" className="link">
+                    Projects
+                </NavLink>
+                <NavLink to="/career" className="link">
+                    Career
+                </NavLink>
+                <NavLink to="/about" className="link">
+                    About Me
+                </NavLink>
+            </nav>
     </header>
   )
 }
