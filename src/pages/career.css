@@ -1,0 +1,42 @@
+.career {
+    margin: 0 auto;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.job h2 {
+    margin-bottom: -.5rem;
+}
+
+.resumeJobLocation {
+    margin-top: -.5rem;
+}
+
+.job {
+    text-align:left;
+    background-color:lightblue;
+    padding:1rem;
+    border-radius: 25px;
+    margin:1rem;
+}
+
+.jobInfo {
+    display:flex;
+    justify-content:space-between;
+}
+
+@media only screen and (max-width: 900px) {
+    .jobInfo {
+        flex-direction:column;
+    }
+  }
+
+
+
+@media only screen and (min-width: 1000px) {
+    .jobSummaries {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
