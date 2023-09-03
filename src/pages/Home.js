@@ -1,7 +1,21 @@
+import "./home.css"
+
+const action = ["build", "create", "change", "shape"];
+
+function addWord(action){
+  return action;
+}
+console.log(addWord(action));
+
+const word = action[Math.floor(Math.random()*4)];
+
+
+
 export const Home = () => {
   return (
-    <main>
-      <h1>Home</h1>
+    <main className="home-main">
+      <h1>What shall we {word} today?</h1>
+      
     </main>
-  )
+    )
 }
