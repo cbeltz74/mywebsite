@@ -1,6 +1,6 @@
 header {
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content:space-between;
     text-transform: uppercase;
 }
@@ -16,6 +16,7 @@ header {
 
 .navigation {
     display: flex;
+    flex-direction:column;
     justify-content: space-between;
 }
 
@@ -30,3 +31,12 @@ header {
     color:white;
 }
 
+@media only screen and (min-width: 900px) {
+    header {
+      flex-direction:row;
+    }
+
+    .navigation {
+        flex-direction:row;
+    }
+  }
