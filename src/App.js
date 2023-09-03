@@ -1,7 +1,7 @@
 import { Header, Footer } from "./components";
 import { AllRoutes } from "./routes/AllRoutes";
 import './App.css';
-// import bird from "./assets/photos/bird.jpg";
+
 function App() {
   return (
     <div className="App" 

@@ -16,6 +16,10 @@
     width:75%;
 }
 
+.projDesc {
+    text-align:left;
+}
+
 .projLinks ul {
     list-style-type: none;
     padding-inline-start:0;

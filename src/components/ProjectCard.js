@@ -1,30 +1,45 @@
+import { useState, useEffect } from "react";
 import "./projectCard.css";
-import screenshot from "../assets/photos/screenshot_taskmate.jpg";
 
 export const ProjectCard = () => {
 
+
+    const [projects, setProducts ] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:8000/projects')
+      .then(response => response.json())
+      .then(data => setProducts(data));
+      }, []);
+
   return (
-    <>
-        <section className="project-card">
-            <section className="projSS">
-                <img src={screenshot} alt="Project screenshot" />
+
+
+    <section>
+
+    { projects.map((project) => (
+        <section key={project.id} className="project-card">
+            <section className="projSS">    
+                <img src={project.screenshot} alt={`${project.name} screenshot`} />
             </section>
 
             <section className="projDesc">
-                <h3>Project Name</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem vero impedit tempora? Quae aut assumenda saepe impedit praesentium fuga repellat perferendis? Fuga aliquam culpa officia nihil in? In, assumenda et!</p>
+                <h3>{project.name}</h3>
+                <p>{project.description}</p>
                 <h4>Technology used:</h4>
-                <p>React, React Router</p>
+                <p>{project.technology}</p>
             </section>
             
             <section className="projLinks">
                 <h3>Project Links</h3>
                 <ul>
-                    <a href="/"><li>Code on Github</li></a>
-                    <a href="/"><li>Demo</li></a>
+                    <a href={project.github}><li>Github</li></a>
+                    <a href={project.demo}><li>Demo</li></a>
                 </ul>
             </section>
         </section>
-    </>
+    )) }
+
+</section>
   )
 }
