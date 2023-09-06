@@ -1,15 +1,21 @@
+.project-wrapper {
+    margin:0 auto;
+    scrollbar-gutter: stable;
+}
+
 .project h2 {
     padding-top:.5rem;
 }
 
 .project-card {
     display:grid;
-    grid-template-columns: 40% 40% 20%;
-    padding:1rem;
+    grid-template-columns: 2fr 2fr 1fr;
+    padding:1rem 0;
     justify-content:space-between;
     margin:2rem 0;
     background-color:lightblue;
     border-radius:50px;
+    box-sizing: border-box;
 }
 
 .project-card img {

@@ -12,12 +12,12 @@ export const Header = () => {
                 <NavLink to="/projects" className="link">
                     Projects
                 </NavLink>
-                <NavLink to="/career" className="link">
-                    Career
-                </NavLink>
                 <NavLink to="/about" className="link">
                     About Me
                 </NavLink>
+                <NavLink to="/career" className="link">
+                    Career
+                </NavLink>            
             </nav>
     </header>
   )

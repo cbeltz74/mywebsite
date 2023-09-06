@@ -3,6 +3,7 @@ header {
     flex-direction:column;
     justify-content:space-between;
     text-transform: uppercase;
+    border-bottom: 1px solid gray;
 }
 
 .title-link {
@@ -18,11 +19,11 @@ header {
     display: flex;
     flex-direction:column;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .link {
     padding: 1rem 2rem;
-    border: 1px solid blue;
     text-decoration: none;
 }
 

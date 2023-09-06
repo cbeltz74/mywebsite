@@ -15,7 +15,7 @@ export const ProjectCard = () => {
   return (
 
 
-    <section>
+    <section className="project-wrapper">
 
     { projects.map((project) => (
         <section key={project.id} className="project-card">
@@ -33,7 +33,7 @@ export const ProjectCard = () => {
             <section className="projLinks">
                 <h3>Project Links</h3>
                 <ul>
-                    <a href={project.github && project.github}><li>Github</li></a>
+                    <a href={project.github}><li>Github</li></a>
                     <a href={project.demo}><li>Demo</li></a>
                 </ul>
             </section>

@@ -45,7 +45,7 @@
             "id": 5,
             "screenshot": "http://localhost:3000/assets/images/taxpayer-form.png",
             "name": "Taxpayer information form",
-            "description": "I created a taxpayer information with the idea to provide users as much general information as possible with the need to call us on the phone. I presented a working example to management.",
+            "description": "As a Revenue Analyst, I created a taxpayer information form in my spare time with the idea to provide users as much general information as possible with the need to call us on the phone. I presented a working example to management.",
             "technology": "Javascript",
             "github": "https://codepen.io/cbeltz74/pen/JQYJEa",
             "demo": "https://codepen.io/cbeltz74/pen/JQYJEa"
